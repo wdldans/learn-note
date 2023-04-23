@@ -1,0 +1,48 @@
+php变量
+    PHP 语句和 PHP 变量都是区分大小写的
+    PHP 是一门弱类型语言
+
+    PHP 有四种不同的变量作用域：
+        local
+        global
+        static
+        parameter
+    
+        在所有函数外部定义的变量，拥有全局作用域。除了函数外，全局变量可以被脚本中的任何部分访问，
+    要在一个函数中访问一个全局变量，需要使用 global 关键字。
+        
+        PHP 将所有全局变量存储在一个名为 $GLOBALS[index] 的数组中。 index 保存变量的名称。
+    这个数组可以在函数内部访问，也可以直接用来更新全局变量
+
+
+
+PHP5 数据类型
+        String（字符串）
+        Integer（整型）
+        Float（浮点型）
+        Boolean（布尔型）
+        Array（数组）
+        Object（对象）
+        NULL（空值）
+    
+    PHP var_dump() 函数返回变量的数据类型和值
+
+
+在 PHP 中，有三种数组类型：
+    索引数组 - 带有数字索引的数组
+    关联数组 - 带有指定键的数组
+    多维数组 - 包含一个或多个数组的数组
+
+
+超全局变量
+    在 PHP 4.1.0 中引入，是在全部作用域中始终可用的内置变量
+
+    $GLOBALS
+    $_SERVER
+    $_REQUEST
+    $_POST
+    $_GET
+    $_FILES
+    $_ENV
+    $_COOKIE
+    $_SESSION
